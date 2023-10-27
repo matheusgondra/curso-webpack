@@ -36,5 +36,9 @@ module.exports = {
 			filename: "style.css"
 		}),
 		new webpack.optimize.ModuleConcatenationPlugin()
-	]
+	],
+	devServer: {
+		contentBase: path.resolve(__dirname, "app/dist"),
+		port: 3000
+	}
 };
