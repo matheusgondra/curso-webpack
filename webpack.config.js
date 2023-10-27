@@ -8,6 +8,9 @@ module.exports = {
 		path: path.resolve(__dirname, "app/dist")
 	},
 	plugins: [
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			template: "./app/src/app.html",
+			filename: "app.html"
+		})
 	]
 };
