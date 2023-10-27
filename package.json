@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "lite-server --baseDir=app",
+	 "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production --config webpack.config.js",
     "build:dev": "set NODE_OPTIONS=--openssl-legacy-provider && webpack --mode development --config webpack.config.js"
   },
   "author": "",
