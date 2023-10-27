@@ -22,6 +22,9 @@ devDependencies:
   lite-server:
     specifier: ^2.6.1
     version: 2.6.1
+  mini-css-extract-plugin:
+    specifier: 1.4.0
+    version: 1.4.0(webpack@5.28.0)
   style-loader:
     specifier: 2.0.0
     version: 2.0.0(webpack@5.28.0)
@@ -1583,6 +1586,18 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /mini-css-extract-plugin@1.4.0(webpack@5.28.0):
+    resolution: {integrity: sha512-DyQr5DhXXARKZoc4kwvCvD95kh69dUupfuKOmBUqZ4kBTmRaRZcU32lYu3cLd6nEGXhQ1l7LzZ3F/CjItaY6VQ==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^4.4.0 || ^5.0.0
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 3.3.0
+      webpack: 5.28.0(webpack-cli@4.5.0)
+      webpack-sources: 1.4.3
+    dev: true
+
   /minimatch@3.0.4:
     resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
     dependencies:
@@ -2466,6 +2481,13 @@ packages:
       clone-deep: 4.0.1
       flat: 5.0.2
       wildcard: 2.0.1
+    dev: true
+
+  /webpack-sources@1.4.3:
+    resolution: {integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==}
+    dependencies:
+      source-list-map: 2.0.1
+      source-map: 0.6.1
     dev: true
 
   /webpack-sources@2.3.1:
